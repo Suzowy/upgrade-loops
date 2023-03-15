@@ -44,3 +44,16 @@ const placesToTravel = ['Japon', 'Venecia', 'Murcia', 'Santander', 'Filipinas', 
 for (const value of placesToTravel) {
   console.log(value);
 }
+
+//Iteración #4: Probando For...in
+//Usa un **for...in** para imprimir por consola los datos del alienígena.. Puedes usar este objeto:
+
+const alien = {
+  name: 'Wormuck',
+  race: 'Cucusumusu',
+  planet: 'Eden',
+  weight: '259kg'
+}
+for (const key in alien) {
+  console.log("la propiedad " + key + " tiene el valor: " + alien[key]);
+}
