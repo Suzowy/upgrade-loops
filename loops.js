@@ -57,3 +57,23 @@ const alien = {
 for (const key in alien) {
   console.log("la propiedad " + key + " tiene el valor: " + alien[key]);
 }
+
+//**teración #5: Probando For**
+//Usa un bucle **for** para recorrer todos los destinos del array y elimina los elementos que tengan el id 11 y 40. Imprime en un ***console log*** el array. Puedes usar este array:
+
+const placesToGo = [
+  {id: 5, name: 'Japan'}, 
+  {id: 11, name: 'Venecia'}, 
+  {id: 23, name: 'Murcia'}, 
+  {id: 40, name: 'Santander'}, 
+  {id: 44, name: 'Filipinas'}, 
+  {id: 59, name: 'Madagascar'}
+]
+for (let index = 0; index < placesToGo.length; index ++) {
+  const pais = placesToGo[index];
+  if( pais.id == 11 || pais.id == 40 ){
+    placesToGo.splice(index, 1);
+  }
+}
+console.log(placesToGo);
+
